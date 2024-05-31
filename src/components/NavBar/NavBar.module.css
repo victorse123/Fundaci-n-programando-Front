@@ -1,0 +1,178 @@
+.navBarContainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  max-height: 30%;
+  z-index: 1000;
+  gap: 20px;
+  background-color: whitesmoke;
+}
+
+
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .navBarContainer {
+    flex-direction: column;
+    top: 0;
+    height: auto;
+  }
+}
+
+
+.headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 70px;
+  max-width: 100%;
+  max-height: 30%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  padding-left: 7%;
+}
+
+.selectContainer {
+  display: flex;
+  gap: 50px;
+}
+
+  .selectContainer select{
+    width: 215px;
+    flex: 1;
+    border-radius: 20px;
+    border: 0.5px solid rgb(113, 107, 107);
+    outline: rgb(113, 107, 107);
+  }
+  .selectContainer select:focus {
+    border-width: 2px;
+  }
+  
+  .selectContainer label {
+    text-align: left;
+    color: rgb(113, 107, 107);
+    font-size: 17px;
+  }
+
+    .selectButton {
+      font-size: 14px;
+      padding: 0.5em 2em;
+      border: 1px solid rgb(113, 107, 107);
+      background: #ffffff;
+      border-radius: 8px 8px 8px 8px;
+      color: rgb(113, 107, 107);
+      font-family: inherit;
+      font-size: inherit;
+      text-align-last: left;
+      text-align: left;
+    }
+
+    .searchButton{
+      font-size: 14px;
+      padding: 0.5em 2em;
+      width: 150px;
+      background: #ffffff;
+      color: black;
+      border-radius: 25px;
+      border: 0.5px solid rgb(113, 107, 107);
+      outline: rgb(113, 107, 107);
+      font-family: inherit;
+      font-size: inherit;
+      text-align-last: left;
+      text-align: left;
+      flex: 1;
+    }
+    .searchButton select:focus {
+      border-width: 2px; 
+    }
+
+    .button {
+      display: inline-block;
+      color: rgb(113, 107, 107);
+      background-color: whitesmoke;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: color 0.3s;
+      z-index: 10;
+      font-size: 15.5px;
+      border: 0.5px solid rgb(113, 107, 107);
+    }
+    
+
+    .button:hover {
+      background-color: rgba(113, 107, 107, 0.4);
+      color: white;
+      z-index: 10;
+      border: none;
+      outline: none;
+    }
+
+  .adminNavBarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .logoPyd{
+    width: 18%;
+    margin-top: 0%;
+    margin-left: -65%;
+  }
+
+  .homeButton {
+  position: absolute;
+  top: 50%;
+  margin-right: 25%;
+  right: 20px;
+  color: rgb(113, 107, 107);
+  font-size: 0.90vw;
+  border-radius: 5px;
+  transition: color 0.3s;
+  }
+  
+  .homeButton:hover {
+    color: #b70303;
+  }
+
+  .publicarButton{
+    position: absolute;
+    top: 50%;
+    margin-right: 15%;
+    right: 20px;
+    color: rgb(113, 107, 107);
+    font-size: 0.90vw;
+    border-radius: 5px;
+    transition: color 0.3s;
+  }
+  
+  .publicarButton:hover {
+    color: #b70303;
+  }
+
+  .submitBtn {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    border: 1px solid rgb(113, 107, 107);
+    box-shadow: 0 10px 16px 0 rgb(183, 183, 183);
+    background: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+    transition: 0.3s;
+  }

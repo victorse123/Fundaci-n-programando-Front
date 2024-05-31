@@ -1,0 +1,35 @@
+.cardsContainer {
+  position: fixed;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las tarjetas */
+  align-items: flex-start; /* Alinea las tarjetas en la parte superior del contenedor */
+  flex-wrap: wrap;
+  overflow-y: auto;
+  top: 19%;
+  left: 50%; /* Centra el contenedor horizontalmente */
+  transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+  padding-top: 28px; /* Padding superior */
+  padding-bottom: 20px; /* Padding inferior */
+  max-width: 86%;
+  max-height: 74%;
+  width: 1400px;
+  height: 625px;
+  border-radius: 10px;
+  z-index: 1;
+  gap: 12px;
+}
+.cardsContainer::-webkit-scrollbar {
+  width: 0px; /* Ancho del scroll */
+  background-color: transparent; /* Fondo transparente */
+}
+
+.cardsContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Color del scroll */
+  border-radius: 0px; /* Borde redondeado */
+}
+
+@media screen and (max-width: 768px) {
+  .cardsContainer {
+      max-width: 90%; /* Cambiar el valor según tus necesidades */
+  }
+}
