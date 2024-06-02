@@ -1,0 +1,507 @@
+.detailContainer {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 930px;
+  border-radius: 10px;
+  z-index: 50;
+  background-color: white;
+}
+
+
+
+@media (max-width: 1200px) {
+  .detailContainer {
+      width: 95%; /* Reducir el ancho en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .detailContainer {
+      width: 95%; /* Reducir el ancho en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .detailContainer {
+      width: 100%; /* Ancho completo en pantallas muy pequeñas */
+  }
+}
+
+.picturesContainer {
+  width: 100%;
+  height: auto;
+  z-index: 51;
+  position: relative;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.picturesContainer h2 {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  z-index: 52;
+}
+
+.picturesContainer h3 {
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 4vh; /* Coloca el texto en la parte superior del contenedor */
+    left: 0; /* Coloca el texto en la esquina izquierda del contenedor */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 10px; /* Agrega un relleno para separar el texto del borde */
+    z-index: 52;
+}
+
+  .principalPicContainer{
+    width: 40vw;
+    height: 67vh;
+    z-index: 51;
+    margin-top: -14.5%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .imageContainer{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 31.5%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .principalPicContainer img:hover {
+    transform: scale(0.95); /* Aplica un zoom del 10% cuando el mouse pasa por encima de la imagen */
+    z-index: 10;
+  }
+
+  .container {
+    display: flex; /* Usa flexbox para organizar las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas si no caben en una sola fila */
+  }
+  
+  .container img {
+    width: 50%; /* Cada imagen cubrirá el 50% del ancho del contenedor principal */
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover;
+  }
+
+  .secondaryPicsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 46.5vw;
+    height: 44.5vh;
+    z-index: 51;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .secondaryPicsContainer img {
+    width: 45%; /* Ajusta el ancho de la imagen al 24% del contenedor para dejar un margen del 1% */
+    height: 45%; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    margin: 1.7%;
+    object-fit: cover;
+  }
+  
+  .secondaryPicsContainer img:hover {
+    transform: scale(0.95); /* Aplica un zoom del 10% cuando el mouse pasa por encima de la imagen */
+  }
+
+  .secondaryPicsContainer img:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .secondaryPicsContainer img:nth-child(2) {
+    top: 0;
+    left: 50%;
+  }
+  
+  .secondaryPicsContainer img:nth-child(3) {
+    top: 40%;
+    left: 0;
+  }
+  
+  .secondaryPicsContainer img:nth-child(4) {
+    top: 40%;
+    left: 50%;
+  }
+  
+  
+.principalInfoContainer {
+  width: 600px;
+  height: 150px;
+  z-index: 51;
+  margin-top: 2%;
+  background-color: white;
+  border: 2px solid rgba(113, 107, 107, 0.5);
+  border-radius: 25px;
+}
+.borderContainer{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgba(113, 107, 107, 0.5);
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+.item {
+  width: 50%; /* Para que cada elemento ocupe la mitad del contenedor */
+  box-sizing: border-box; /* Para que el borde no aumente el ancho del elemento */
+  padding: 10px; /* Espacio entre los elementos */
+}
+
+.roomsContainer {
+  display: flex; /* Utiliza flexbox para los elementos secundarios */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios */
+  align-items: center; /* Centra verticalmente los elementos secundarios */
+  width: 5vh;
+  height: 8vh;
+  z-index: 51;
+  margin-top: 0vh;
+  color: black;
+}
+
+
+.secondaryInfoContainer {
+  display: flex; /* Utiliza flexbox para los elementos secundarios */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos secundarios */
+  align-items: left; /* Centra verticalmente los elementos secundarios */
+  width: 40vw;
+  height: 8vh;
+  z-index: 51;
+  margin-top: 0vh;
+}
+
+/* Estilos para los elementos secundarios */
+.secondaryInfoContainer > * {
+  flex: 1; /* Establece el tamaño flexible para que ocupen el mismo espacio */
+}
+.descriptionContainer {
+  width: 45vw;
+  height: 24.5vh;
+  z-index: 51;
+  margin-top: -2.5vw;
+  margin-right: 0vw;
+  display: flex; /* Hace que el contenido se comporte como un flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  text-align: justify; /* Justifica el texto dentro del contenedor */
+}
+
+.textDescriptionContainer{
+  width: 95%; /* Ancho del contenedor */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  max-width: 800px;
+  margin-right: 1.5%;
+  margin-top: 5%;
+  padding: 20px; /* Espaciado interno del contenedor */
+  background-color: #f0f0f0; /* Color de fondo del contenedor */
+  border: 1px solid #ccc; /* Borde del contenedor */
+  border-radius: 25px; /* Radio de borde del contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+.textDescriptionContainer h3{
+  font-size: 1em;
+  margin:0;
+  text-align: center; 
+}
+
+.iconContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  margin-top: 8%;
+  margin-left: 10%;
+  z-index: 200;
+}
+
+.locationIcon {
+  position: absolute;
+  top: 5.1vh;
+  left: 0;
+  transform: translateY(-50%);
+  width: 7vh;
+  height: 7vh;
+  margin-top: 23%;
+  margin-left: 1%;
+  z-index: 199;
+}
+
+.priceIcon {
+  position: absolute;
+  bottom: -3.5vh;
+  left: 0.8vw;
+  width: 4.2vh;
+  height: 4.2vh;
+  z-index: 200;
+}
+
+.textContainer {
+  position: relative;
+  color: black;
+}
+
+.line1 {
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 15%;
+}
+
+.line2 {
+  position: absolute;
+  margin-top: -5.5%;
+  margin-left: 15%;
+  transform: translateY(-50%);
+}
+
+.line3 {
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 15%;
+}
+
+.lineParking {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 11%;
+}
+
+.lineStorage {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 40%;
+}
+
+.lineSwimmingPool {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 65%;
+}
+
+
+.imgLineContainer {
+  position: relative;
+}
+
+.imageLine1 {
+  position: absolute;
+  top: -6.5vw;
+  left: 4vw;
+  width: 1vw;
+  height: 5vh;
+  z-index: 200;
+}
+
+.imageLine2 {
+  position: absolute;
+  top: -3.65vw;
+  left: 4vw;
+  width: 1vw;
+  height: 5vh;
+  z-index: 200;
+}
+
+.imageLine3 {
+  position: absolute;
+  top: -0.8vw;
+  left: 4vw;
+  width: 1vw;
+  height: 5vh;
+  z-index: 200;
+}
+
+.titleContainer {
+  position: absolute;
+  background-color: rgba(113, 107, 107, 0.5);
+  max-width: 44.5%;
+  width: 45.5%;
+  height: 10%;
+  left: 0%;
+  bottom: 2vh;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  color:  #e8e8e8;
+  padding: 10px;
+  z-index: 60;
+  border-radius: 5px;
+}
+
+.secondaryIcon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.parkingIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 37px;
+  margin-top: 0%;
+  margin-left: 0%;
+  z-index: 200;
+}
+
+.storageIcon {
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  width: 7vh;
+  height: 7vh;
+  margin-top: 45%;
+  margin-left: 30%;
+  z-index: 199;
+}
+
+.swimmingPooIcon {
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+  width: 6vh;
+  height: 6vh;
+  z-index: 200;
+}
+
+.reservar-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de apuntador al pasar por encima */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-top: -10vh;
+  margin-right: -10%;
+}
+
+.reservar-button:hover {
+  background-color: grey; /* Color de fondo del botón al pasar el ratón */
+}
+
+.popupContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex; /* Utiliza flexbox */
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.closeButton {
+  position: absolute;
+  bottom: 35px; /* Ajusta la posición del botón para que esté pegado al borde inferior */
+  left: 50%; /* Centra horizontalmente el botón */
+  transform: translateX(-50%); /* Centra horizontalmente el botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.closeButton:hover {
+  background-color: rgb(113, 107, 107); 
+  color: #fff;
+
+}
+.moreImages {
+  width: 30px; /* Ancho del botón */
+  height: 30px; /* Altura del botón */
+  border-radius: 10px; /* Para hacer las esquinas redondeadas */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: whitesmoke; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente aumentado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  outline: none; /* Quita el contorno al hacer clic */
+  display: flex; /* Utiliza flexbox para centrar el contenido vertical y horizontalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.moreImages:hover {
+  background-color: rgb(113, 107, 107); 
+  outline: none;
+}
+
+
+.button {
+  display: inline-block;
+  border: 0.5px solid rgba(113, 107, 107);
+  background-color: whitesmoke;
+  color: rgba(113, 107, 107);
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: color 0.3s;
+  z-index: 10;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.button:not(.disabled):hover,
+.button:focus,
+.button:active
+.active {
+  background-color: rgba(113, 107, 107, 0.4);
+  color: white;
+  z-index: 10;
+  border: none;
+  outline: none;
+}
+
+.disabled {
+  background-color: #e9ecef;
+  color: rgba(113, 107, 107, 0.3);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.detailTextContainer {
+  width: 100%;
+  max-width: 800px;
+  margin-right: 1.5%;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+}
+
