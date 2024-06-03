@@ -28,9 +28,9 @@ function App() {
         <Route exact path='/user/profile/edit' element ={<UserEditProfile/>}/>
 
         <Route exact path='/create' element ={<ProtectedRoute Component={Create}/>}/>
-        <Route exact path='/admin/dashboard' element ={<ProtectedRoute Component={AdminDashboard}/>}/>
+        {/* <Route exact path='/admin/dashboard' element ={<ProtectedRoute Component={AdminDashboard}/>}/>
         <Route exact path='/admin/editProperty/:id' element ={<ProtectedRoute Component={AdminEditProperty}/>}/>
-        <Route exact path='/admin/sales' element ={<ProtectedRoute Component={AdminSalesManagement}/>}/>
+        <Route exact path='/admin/sales' element ={<ProtectedRoute Component={AdminSalesManagement}/>}/> */}
       </Routes>
       </div>
     </BrowserRouter>
