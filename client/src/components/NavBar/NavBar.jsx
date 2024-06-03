@@ -64,30 +64,30 @@ const NavBar = ({currentPage,setCurrentPage}) => {
 
         {/* Selector de categoría */}
         <select value={selectedCategory} onChange={handlerCategory} className={styles.selectButton}>
-          <option value="all">¿Qué busca?</option>
-          <option value="Arriendo">Arriendo</option>
-          <option value="Venta">Venta</option>
+          <option value="all">Mision</option>
+          <option value="Arriendo"></option>
+          <option value="Venta"></option>
         </select>
 
         {/* Selector de tipo */}
         <select value={selectedType} onChange={handlerType} className={styles.selectButton}>
-          <option value="all">¿Tipo de propiedad?</option>
-          <option value="Casa">Casa</option>
-          <option value="Departamento">Departamento</option>
+          <option value="all">Vision</option>
+          <option value="Casa">2026</option>
+          <option value="Departamento">2030</option>
         </select>
 
         {/* Selector de orden de precio */}
         <select value={selectedPriceOrder} onChange={handlerPriceOrder} className={styles.selectButton}>
-          <option value="default">Ordenar: $</option>
-          <option value="ASC">Ascendente</option>
-          <option value="DESC">Descendente</option>
+          <option value="default">Colaboracion de:</option>
+          <option value="ASC">Empresa 1</option>
+          <option value="DESC">Empresa 2</option>
         </select>
 
         {/* Campo de entrada para la zona */}
         <input
           className={styles.searchButton}
           onChange={handleZone}
-          placeholder={"Buscar Comuna..."}
+          placeholder={"Buscar..."}
           type="text"
           value={selectedZone}
         />

@@ -5,6 +5,7 @@ import { Pagination } from '../../components/Pagination/Pagination.jsx';
 import Header from '../../components/Header/Header.jsx'
 import Cards from '../../components/Cards/Cards.jsx'
 import NavBar from '../../components/NavBar/NavBar.jsx'
+import Footer from '../../components/Footer/Footer.jsx';
 
 
 function Home() {
@@ -24,10 +25,15 @@ function Home() {
       <div>
       <Header></Header>
       <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage}></NavBar>
-      <Cards allProperties={allProperties} ></Cards>
+      {/* <Cards allProperties={allProperties} ></Cards> */}
       <Pagination pagina={currentPage} setPagina={setCurrentPage} maximo={pages}  />
       </div>
+      
+      <Footer/>
+   
     </>
+    
+    
   )
 }
 
