@@ -77,10 +77,10 @@ const LandingPage = () => {
         <Link to="/home" className={styles.button}>Iniciar como Invitado</Link>
         </div>
         <div>-</div>
-        <div className={styles.textContainer }>
+        {/* <div className={styles.textContainer }>
         <p>Registro de Usuario:</p>
         <button className={styles.button} onClick={handleSignInWithGoogle}>Iniciar Sesión con Google </button>
-        </div>
+        </div> */}
         </div>
     </div>
   );

@@ -1,17 +1,17 @@
 
 .landingPageContainer {
-    background-image: url('../../assets/Image/engranajes.gif');
+    background-image: url('../../assets/Image/chica-usando-laptop-codigo-binario.JPEG');
     background-size: 100% 100%;
     background-position: center;
-    height: 100vh;
+    height: 94vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 50px solid black; /* Borde temporal */
-    margin-left: -6.3%;
-    padding: 0;
+    border: 30px solid black; /* Borde temporal */
+    margin-left: -26.3%;
+    padding: 1;
     box-sizing: border-box;
     z-index: 1;
 }
