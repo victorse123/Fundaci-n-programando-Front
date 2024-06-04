@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logoPyd.jpg';
+import logo from '../../assets/Image/Programando.png';
 import appFirebase from '../../credenciales.js';
 import { getAuth,signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
