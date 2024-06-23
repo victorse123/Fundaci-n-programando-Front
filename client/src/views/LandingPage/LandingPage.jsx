@@ -71,7 +71,7 @@ const LandingPage = () => {
       <div className={styles.landingPageOverlay}></div>
       <div className={styles.content}>
         <div>
-        <h1>Bienvenidos</h1>
+        <h1>-Bienvenidos-</h1>
         <h1>A</h1>
         <h1>Programando sueños</h1>
         <Link to="/home" className={styles.button}>Iniciar como Invitado</Link>
