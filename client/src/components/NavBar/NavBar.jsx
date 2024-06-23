@@ -65,8 +65,8 @@ const NavBar = ({currentPage,setCurrentPage}) => {
         {/* Selector de categoría */}
         <select value={selectedCategory} onChange={handlerCategory} className={styles.selectButton}>
           <option value="all">Mision</option>
-          <option value="Arriendo"></option>
-          <option value="Venta"></option>
+          <option value="A"></option>
+          <option value="B"></option>
         </select>
 
         {/* Selector de tipo */}
